@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '~> 4.2.8' # UPGRADED THIS FROM 4.2.5 by changing and running bundle install after rvm --default 2.4.4
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -47,7 +47,9 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  
+  gem 'pg','~>0.11'
   gem 'rails_12factor'
+
 end
 
